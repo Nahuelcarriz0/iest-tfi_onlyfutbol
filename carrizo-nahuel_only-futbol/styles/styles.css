@@ -1,0 +1,568 @@
+/* ==========================================================
+   Identidad visual de Only Fútbol (docs/CONSTITUCION.md)
+   Los colores y las tipografías se definen solo aquí.
+   ========================================================== */
+:root {
+  --color-azul: #0c1b54;
+  --color-amarillo: #fbc51d;
+  --color-blanco: #ffffff;
+  --color-negro: #000000;
+
+  /* Montserrat y Roboto se cargan desde Google Fonts (ver index.html). */
+  --fuente-titulos: "Montserrat", Arial, sans-serif;
+  --fuente-textos: "Roboto", Arial, sans-serif;
+
+  --altura-encabezado: 4.5rem;
+  --ancho-maximo: 1200px;
+  --transicion: 0.25s ease;
+  /* Sombra de las tarjetas: azul de la marca con transparencia. */
+  --sombra-tarjeta: 0 10px 24px color-mix(in srgb, var(--color-azul) 18%, transparent);
+}
+
+/* ==========================================================
+   Base
+   ========================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* El pie queda siempre al final de la pantalla, aunque haya poco contenido. */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--fuente-textos);
+  line-height: 1.6;
+  color: var(--color-negro);
+  background-color: var(--color-blanco);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+
+  /* Las tarjetas no se mueven: solo cambian el borde y la sombra. */
+  .tarjeta-producto {
+    transform: none !important;
+  }
+}
+
+/* ==========================================================
+   Encabezado y navegación
+   ========================================================== */
+.encabezado {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--color-azul);
+  border-bottom: 4px solid var(--color-amarillo);
+}
+
+.encabezado-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--ancho-maximo);
+  min-height: var(--altura-encabezado);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.encabezado-marca {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-family: var(--fuente-titulos);
+  font-size: 1.375rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--color-blanco);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.encabezado-marca-destacada {
+  color: var(--color-amarillo);
+}
+
+.encabezado-marca:focus-visible,
+.navegacion-boton:focus-visible,
+.navegacion-enlace:focus-visible {
+  outline: 3px solid var(--color-amarillo);
+  outline-offset: 3px;
+}
+
+/* Botón del menú: solo existe en celulares y cuando el script está activo. */
+.navegacion-boton {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 0 10px;
+  background: none;
+  border: 2px solid var(--color-amarillo);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.navegacion-boton-linea {
+  display: block;
+  height: 3px;
+  background-color: var(--color-amarillo);
+  border-radius: 2px;
+  transition: transform var(--transicion), opacity var(--transicion);
+}
+
+.navegacion {
+  width: 100%;
+}
+
+.navegacion-lista {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 0 1rem;
+  list-style: none;
+}
+
+.navegacion-enlace {
+  display: block;
+  padding: 0.75rem 0.5rem;
+  font-family: var(--fuente-titulos);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-blanco);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-left: 4px solid transparent;
+  transition: color var(--transicion), border-color var(--transicion);
+}
+
+.navegacion-enlace:hover,
+.navegacion-enlace[aria-current="page"] {
+  color: var(--color-amarillo);
+  border-left-color: var(--color-amarillo);
+}
+
+/* Con el script activo, el menú del celular se abre y se cierra con el botón. */
+.encabezado.menu-disponible .navegacion-boton {
+  display: flex;
+}
+
+.encabezado.menu-disponible .navegacion {
+  display: none;
+}
+
+.encabezado.menu-abierto .navegacion {
+  display: block;
+}
+
+.encabezado.menu-abierto .navegacion-boton-linea:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.encabezado.menu-abierto .navegacion-boton-linea:nth-child(2) {
+  opacity: 0;
+}
+
+.encabezado.menu-abierto .navegacion-boton-linea:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+  .encabezado-contenido {
+    flex-wrap: nowrap;
+  }
+
+  .encabezado.menu-disponible .navegacion-boton {
+    display: none;
+  }
+
+  .encabezado.menu-disponible .navegacion,
+  .navegacion {
+    display: block;
+    width: auto;
+  }
+
+  .navegacion-lista {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .navegacion-enlace {
+    position: relative;
+    padding: 0.75rem 0.75rem;
+    border-left: 0;
+  }
+
+  .navegacion-enlace::after {
+    content: "";
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.35rem;
+    left: 0.75rem;
+    height: 3px;
+    background-color: var(--color-amarillo);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform var(--transicion);
+  }
+
+  .navegacion-enlace:hover::after,
+  .navegacion-enlace[aria-current="page"]::after {
+    transform: scaleX(1);
+  }
+}
+
+/* ==========================================================
+   Secciones
+   ========================================================== */
+main {
+  flex: 1;
+}
+
+.seccion {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  scroll-margin-top: var(--altura-encabezado);
+}
+
+.seccion-titulo {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding-bottom: 0.35rem;
+  font-family: var(--fuente-titulos);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-azul);
+  text-transform: uppercase;
+  border-bottom: 4px solid var(--color-amarillo);
+}
+
+/* ==========================================================
+   Buscador y filtro del catálogo
+   ========================================================== */
+.catalogo-controles {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.catalogo-campo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.catalogo-etiqueta {
+  font-family: var(--fuente-titulos);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-azul);
+  text-transform: uppercase;
+}
+
+.catalogo-control {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.5rem 1rem;
+  font-family: var(--fuente-textos);
+  font-size: 1rem;
+  color: var(--color-negro);
+  background-color: var(--color-blanco);
+  border: 2px solid var(--color-azul);
+  border-radius: 6px;
+  transition: border-color var(--transicion), box-shadow var(--transicion);
+}
+
+.catalogo-control::placeholder {
+  color: color-mix(in srgb, var(--color-negro) 55%, transparent);
+}
+
+.catalogo-control:hover {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-amarillo) 45%, transparent);
+}
+
+.catalogo-control:focus-visible {
+  outline: 3px solid var(--color-azul);
+  outline-offset: 2px;
+  border-color: var(--color-amarillo);
+}
+
+/* Íconos dibujados con máscaras: toman el azul de la marca. */
+.catalogo-campo-busqueda::after,
+.catalogo-campo-filtro::after {
+  content: "";
+  position: absolute;
+  bottom: 14px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-azul);
+  pointer-events: none;
+  -webkit-mask: var(--icono) center / contain no-repeat;
+  mask: var(--icono) center / contain no-repeat;
+}
+
+/* Lupa a la izquierda del buscador. */
+.catalogo-campo-busqueda::after {
+  left: 0.85rem;
+  --icono: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round'%3E%3Ccircle cx='10.5' cy='10.5' r='6.5'/%3E%3Cpath d='m15.5 15.5 5 5'/%3E%3C/svg%3E");
+}
+
+.catalogo-campo-busqueda .catalogo-control {
+  padding-left: 2.75rem;
+}
+
+/* Flecha propia de la lista de categorías. */
+.catalogo-campo-filtro::after {
+  right: 0.85rem;
+  --icono: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+}
+
+.catalogo-campo-filtro .catalogo-control {
+  padding-right: 2.75rem;
+  cursor: pointer;
+  appearance: none;
+}
+
+@media (min-width: 768px) {
+  .catalogo-controles {
+    grid-template-columns: 1fr 16rem;
+    align-items: end;
+  }
+}
+
+/* ==========================================================
+   Tarjetas de productos
+   ========================================================== */
+.catalogo-lista {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tarjeta-producto {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--color-blanco);
+  border: 3px solid var(--color-amarillo);
+  border-radius: 8px;
+  transition: transform var(--transicion), box-shadow var(--transicion), border-color var(--transicion);
+}
+
+.tarjeta-producto-imagen {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.tarjeta-producto-titulo {
+  margin: 1rem 0 0.5rem;
+  font-family: var(--fuente-titulos);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-azul);
+  overflow-wrap: anywhere;
+}
+
+/* Línea amarilla bajo el título: aparece al activar la tarjeta, como en el menú. */
+.tarjeta-producto-titulo::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  margin-top: 0.35rem;
+  background-color: var(--color-amarillo);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transicion);
+}
+
+/* Efecto al pasar el mouse (solo en dispositivos con puntero) o al llegar con el teclado. */
+@media (hover: hover) {
+  .tarjeta-producto:hover {
+    z-index: 1;
+    transform: scale(1.03);
+    box-shadow: var(--sombra-tarjeta);
+    border-color: var(--color-azul);
+  }
+
+  .tarjeta-producto:hover .tarjeta-producto-titulo::after {
+    transform: scaleX(1);
+  }
+}
+
+.tarjeta-producto:focus-within,
+.tarjeta-producto:active {
+  z-index: 1;
+  transform: scale(1.03);
+  box-shadow: var(--sombra-tarjeta);
+  border-color: var(--color-azul);
+}
+
+.tarjeta-producto:focus-within .tarjeta-producto-titulo::after,
+.tarjeta-producto:active .tarjeta-producto-titulo::after {
+  transform: scaleX(1);
+}
+
+/* Al seleccionar o tocar la tarjeta, se acerca un poco más (zoom). */
+.tarjeta-producto:active {
+  transform: scale(1.05);
+}
+
+.tarjeta-producto-descripcion {
+  margin: 0 0 1rem;
+  color: var(--color-negro);
+}
+
+.tarjeta-producto-boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  color: var(--color-negro);
+  text-decoration: none;
+  background-color: var(--color-amarillo);
+  border: 2px solid var(--color-amarillo);
+  border-radius: 6px;
+  transition: background-color var(--transicion), color var(--transicion);
+}
+
+.tarjeta-producto-boton:hover {
+  color: var(--color-amarillo);
+  background-color: var(--color-azul);
+}
+
+.tarjeta-producto-boton:focus-visible {
+  outline: 3px solid var(--color-azul);
+  outline-offset: 3px;
+}
+
+/* Animación al scrollear: las tarjetas suben y aparecen al entrar en pantalla.
+   Solo se activa con el script (script/catalogo-animacion.js). Usa "translate"
+   para no interferir con el zoom, que usa "transform". */
+@keyframes tarjeta-aparecer {
+  from {
+    opacity: 0;
+    translate: 0 1.5rem;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.animacion-disponible .tarjeta-producto {
+  opacity: 0;
+}
+
+.animacion-disponible .tarjeta-producto.tarjeta-visible {
+  animation: tarjeta-aparecer 0.5s ease both;
+}
+
+/* Con movimiento reducido, las tarjetas solo aparecen con un fundido, sin subir. */
+@keyframes tarjeta-aparecer-suave {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animacion-disponible .tarjeta-producto.tarjeta-visible {
+    animation-name: tarjeta-aparecer-suave;
+  }
+}
+
+@media (min-width: 768px) {
+  .catalogo-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Las tarjetas de una misma fila aparecen una detrás de otra. */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .animacion-disponible .tarjeta-visible:nth-child(2n) {
+    animation-delay: 0.1s;
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalogo-lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .animacion-disponible .tarjeta-visible:nth-child(3n + 2) {
+    animation-delay: 0.1s;
+  }
+
+  .animacion-disponible .tarjeta-visible:nth-child(3n) {
+    animation-delay: 0.2s;
+  }
+}
+
+/* ==========================================================
+   Pie de página
+   ========================================================== */
+.pie-pagina {
+  padding: 2.5rem 1rem 1.5rem;
+  color: var(--color-blanco);
+  text-align: center;
+  background-color: var(--color-azul);
+  border-top: 4px solid var(--color-amarillo);
+}
+
+.pie-pagina-marca {
+  margin: 0;
+  font-family: var(--fuente-titulos);
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.pie-pagina-marca-destacada {
+  color: var(--color-amarillo);
+}
+
+.pie-pagina-derechos {
+  max-width: var(--ancho-maximo);
+  margin: 1.5rem auto 0;
+  padding-top: 1rem;
+  font-size: 0.875rem;
+  border-top: 1px solid var(--color-amarillo);
+}
