@@ -1,56 +1,42 @@
 # Plan — Catálogo de productos
 
-Basado en `spec.md` y `clarificacion.md`. Pendiente de aprobación del responsable.
-
 ## 1. Qué se va a hacer
 
 Una página `pages/catalogo.html` que muestra los productos en tarjetas, con un buscador por nombre y una lista para filtrar por categoría. Todo con HTML, CSS y JavaScript, sin Bootstrap ni otras herramientas.
 
-## 2. Archivos
 
-| Archivo | Para qué sirve |
-|---|---|
-| `pages/catalogo.html` | La estructura de la página y las tarjetas de los productos. |
-| `styles/styles.css` | Los colores, las tipografías y el diseño adaptable. |
-| `script/productos.js` | Buscar y filtrar las tarjetas. |
-| `assets/img/` | Las imágenes de los productos, entregadas por el responsable. |
-| `pruebas/` | Páginas con datos ficticios para probar errores. **Nuevo y no se publica** (C-21). |
+## 2. Decisiones principales
 
-Las tipografías se cargan desde Google Fonts (C-40). La carpeta `pruebas/` no está en `docs/04-ARQUITECTURA.md`; hay que agregarla ahí.
-
-## 3. Decisiones principales
-
-1. **Las tarjetas están escritas en el HTML** de `pages/catalogo.html`; JavaScript solo se usa para buscar y filtrar.
-2. **Los productos se revisan al cargar la página.** Si alguno tiene datos incorrectos, no se muestra y se avisa en la consola (RF-14).
+1. **Las tarjetas las arma JavaScript** con los datos de los productos, sin agregar librerías.
+2. **Los productos se revisan al cargar la página.** Si alguno tiene datos incorrectos, no se muestra y se avisa en la consola (RF-09).
 3. **Los textos se muestran siempre como texto**, para que nada escrito en el buscador o en los datos se convierta en código.
 4. **Diseño primero para celulares:** 1 columna, 2 desde 768 px y 3 desde 1024 px.
-5. **Solo los cuatro colores de la marca**, sin las combinaciones que no se leen bien (RF-17).
+5. **Solo los cuatro colores de la marca**, sin las combinaciones que no se leen bien (RF-11).
 
-## 4. Cómo se cumplen los requisitos
+## 3. Cómo se va a construir cada requisito
 
-| Requisitos | Cómo se cumplen |
+| Requisito | Cómo se va a construir |
 |---|---|
-| **Mostrar productos** (RF-01 a RF-04) | Una tarjeta por producto con borde amarillo, imagen, título, descripción y botón amarillo "Consultar" que abre WhatsApp con el nombre del producto. Las tarjetas están escritas en `pages/catalogo.html`. |
-| **Imágenes** (RF-03, RF-15, RF-16, RF-21) | Cada imagen tiene texto alternativo. Si no carga, se ve un recuadro con el nombre. Cargan cuando se acercan a la pantalla. |
-| **Filtrar** (RF-05 a RF-07) | Lista desplegable con "Todas" y las cinco categorías. |
-| **Buscar** (RF-08, RF-09, RF-10, RF-11) | Filtra mientras se escribe, sin importar mayúsculas, tildes ni espacios de más. Funciona junto con el filtro de categoría. |
-| **Mensajes** (RF-12, RF-13, RF-19) | "No se encontraron productos", "Por el momento no hay productos disponibles" y contador "Se muestran N productos". |
-| **Seguridad** (RF-14, RF-16) | Se descartan los productos con datos incorrectos y los textos nunca se tratan como código. |
-| **Diseño y accesibilidad** (RF-17, RF-20, RF-22) | Diseño adaptable desde 360 px, controles con etiqueta, foco visible, títulos ordenados, colores y tipografías de la marca. |
-| **SEO e idioma** (RF-18) | Título "Catálogo - Only Fútbol" y todos los textos en español. |
+| **RF-01** | Al abrir la página se leen los productos en orden y se arma una tarjeta por cada uno que sea válido, con imagen, título, descripción y botón "Ver más". |
+| **RF-02** | Una ventana sobre la página repite los datos de la tarjeta tocada, en mayor tamaño, con un botón para cerrar; también se cierra con Esc o tocando afuera. |
+| **RF-03** | El enlace de consulta se arma con el número de la tienda, el nombre del producto y el talle elegido, y se abre en otra pestaña. |
+| **RF-04** | Al elegir una categoría, se ocultan las tarjetas de las demás; la opción "Todas" las muestra a todas. |
+| **RF-05** | El nombre del producto y el texto buscado se comparan sin mayúsculas, tildes ni espacios de más, cada vez que se escribe. |
+| **RF-06** | Una tarjeta solo se muestra si cumple la búsqueda y la categoría a la vez. |
+| **RF-07** | Después de buscar o filtrar se cuentan las tarjetas visibles; si son cero, se muestra el mensaje. |
+| **RF-08** | Si después de leer los datos no queda ningún producto, se muestra el mensaje en lugar de la lista. |
+| **RF-09** | Antes de armar las tarjetas se revisa cada producto; los incorrectos se descartan y se avisa en la consola. |
+| **RF-10** | Si una imagen falla al cargar, se reemplaza por un recuadro del mismo tamaño con el nombre del producto. |
+| **RF-11** | Los colores y las tipografías de la marca se definen una sola vez en los estilos y se reutilizan en toda la página. |
 
-## 5. Qué falta para empezar
+## 4. Qué falta para empezar
 
 - Las **imágenes ya están** en `assets/img/`. Faltan las descripciones definitivas de cada producto.
 
-## 6. Documentos a actualizar
 
-- `docs/09-SEO.md`: "Fútbol" con tilde y rutas `assets/img/`.
-- `docs/04-ARQUITECTURA.md`: agregar `pruebas/` y `script/productos.js` cuando existan.
-- `docs/03-TECNOLOGIAS.md`: sin Bootstrap.
 
-## 7. Cómo se va a probar
+## 5. Cómo se va a probar
 
-- Cada requisito se prueba como indica `spec.md` (sección 3, columna "Cómo se comprueba").
-- Los errores se prueban con las páginas de `pruebas/`, sin tocar los datos reales.
+- Cada requisito de `spec.md` se prueba en el navegador o revisando el código, según corresponda.
+- Los errores se prueban con copias y datos simulados que no se publican, sin tocar los datos reales.
 - Los resultados reales se anotan en `verificacion.md`.

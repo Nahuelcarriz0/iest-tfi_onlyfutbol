@@ -3,7 +3,7 @@
 Principios que guían el desarrollo de Only Fútbol. Toda funcionalidad, cambio o revisión debe cumplirlos. Si un principio cambia, se actualiza este documento antes que el código.
 
 ## 1. Tecnología sencilla y documentada
-La versión actual se desarrolla con HTML5, CSS3 y JavaScript, con control de versiones en Git y GitHub. Bootstrap es opcional y solo puede usarse para el diseño responsive, según `docs/03-TECNOLOGIAS.md`. La base de datos del catálogo será Supabase (PostgreSQL); por ahora los productos están en el HTML. Los servicios externos en uso son Google Fonts, para las tipografías, y WhatsApp, para las consultas.
+La versión actual se desarrolla con HTML5, CSS3 y JavaScript, con control de versiones en Git y GitHub. Bootstrap es opcional y solo puede usarse para el diseño responsive, según `docs/03-TECNOLOGIAS.md`. El catálogo lee sus datos de Supabase (PostgreSQL) y sus imágenes se guardan en Supabase Storage. Los servicios externos en uso son Google Fonts, para las tipografías, y WhatsApp, para las consultas.
 
 **Se comprueba:** el proyecto no incluye frameworks, dependencias ni servicios que no estén documentados y justificados en `docs/03-TECNOLOGIAS.md`.
 

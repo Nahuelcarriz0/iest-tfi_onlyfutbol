@@ -469,6 +469,46 @@ main {
   outline-offset: 3px;
 }
 
+/* El botón de la tarjeta ocupa todo el ancho, como el enlace de la vista ampliada. */
+button.tarjeta-producto-boton {
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.tarjeta-producto[hidden] {
+  display: none;
+}
+
+/* Reemplaza a la imagen cuando no carga. */
+.tarjeta-producto-sin-imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  padding: 1rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  color: var(--color-blanco);
+  text-align: center;
+  background-color: var(--color-azul);
+  border-radius: 4px;
+}
+
+.catalogo-contador {
+  margin: 1.5rem 0 0;
+  font-weight: 700;
+  color: var(--color-azul);
+}
+
+.catalogo-mensaje {
+  margin: 1.5rem 0 0;
+  font-family: var(--fuente-titulos);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-azul);
+}
+
 /* Animación al scrollear: las tarjetas suben y aparecen al entrar en pantalla.
    Solo se activa con el script (script/catalogo-animacion.js). Usa "translate"
    para no interferir con el zoom, que usa "transform". */
@@ -533,6 +573,196 @@ main {
 
   .animacion-disponible .tarjeta-visible:nth-child(3n) {
     animation-delay: 0.2s;
+  }
+}
+
+/* ==========================================================
+   Vista ampliada del producto
+   ========================================================== */
+.tarjeta-producto {
+  cursor: pointer;
+}
+
+body:has(.vista-producto[open]) {
+  overflow: hidden;
+}
+
+.vista-producto {
+  width: min(100% - 2rem, 28rem);
+  max-width: none;
+  max-height: calc(100dvh - 2rem);
+  padding: 0;
+  color: var(--color-negro);
+  background-color: var(--color-blanco);
+  border: 3px solid var(--color-amarillo);
+  border-radius: 8px;
+}
+
+.vista-producto[open] {
+  animation: vista-producto-agrandar 0.25s ease;
+}
+
+.vista-producto::backdrop {
+  background-color: color-mix(in srgb, var(--color-azul) 80%, transparent);
+}
+
+@keyframes vista-producto-agrandar {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vista-producto[open] {
+    animation: none;
+  }
+}
+
+.vista-producto-cerrar {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: var(--color-azul);
+  cursor: pointer;
+  background-color: var(--color-blanco);
+  border: 2px solid var(--color-azul);
+  border-radius: 6px;
+}
+
+.vista-producto-cerrar:hover {
+  color: var(--color-amarillo);
+  background-color: var(--color-azul);
+}
+
+.vista-producto-cerrar:focus-visible,
+.vista-producto-talle input:focus-visible + span {
+  outline: 3px solid var(--color-azul);
+  outline-offset: 2px;
+}
+
+.vista-producto-contenido {
+  display: grid;
+}
+
+.vista-producto-imagen {
+  width: 100%;
+  max-height: 45dvh;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.vista-producto-datos {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.vista-producto-titulo {
+  margin: 0 0 0.5rem;
+  font-family: var(--fuente-titulos);
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--color-azul);
+  overflow-wrap: anywhere;
+}
+
+.vista-producto-descripcion {
+  margin: 0 0 1rem;
+}
+
+.vista-producto-talles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  min-width: 0;
+  margin: 0 0 1rem;
+  padding: 0;
+  border: 0;
+}
+
+.vista-producto-leyenda {
+  margin-bottom: 0.5rem;
+  padding: 0;
+  font-family: var(--fuente-titulos);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-azul);
+  text-transform: uppercase;
+}
+
+.vista-producto-talle {
+  position: relative;
+  cursor: pointer;
+}
+
+/* El círculo de la opción queda oculto: se ve el recuadro con el talle. */
+.vista-producto-talle input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.vista-producto-talle span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 0 0.5rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  color: var(--color-azul);
+  background-color: var(--color-blanco);
+  border: 2px solid var(--color-azul);
+  border-radius: 6px;
+  transition: background-color var(--transicion), color var(--transicion);
+}
+
+.vista-producto-talle input:hover + span {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-amarillo) 45%, transparent);
+}
+
+.vista-producto-talle input:checked + span {
+  color: var(--color-amarillo);
+  background-color: var(--color-azul);
+}
+
+.vista-producto-aviso {
+  margin: 0 0 1rem;
+  font-weight: 700;
+  color: var(--color-azul);
+}
+
+@media (min-width: 768px) {
+  .vista-producto {
+    width: min(100% - 2rem, 56rem);
+  }
+
+  .vista-producto-contenido {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .vista-producto-imagen {
+    max-height: none;
+  }
+
+  .vista-producto-datos {
+    padding: 3.5rem 1.5rem 1.5rem 0.5rem;
   }
 }
 

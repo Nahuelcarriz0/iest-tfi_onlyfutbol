@@ -1,22 +1,22 @@
 # Tareas - Only Futbol
 
 ## Etapa 1 - Planificacion
-- [ ] Definir identidad de marca
-- [ ] Definir publico y categorias
-- [ ] Definir alcance de la primera version
+- [x] Definir identidad de marca
+- [x] Definir publico y categorias
+- [x] Definir alcance de la primera version
 
 ## Etapa 2 - Preparacion
-- [ ] Crear proyecto VSC
-- [ ] Configurar PostgreSQL
-- [ ] Crear repositorio GitHub
-- [ ] Crear estructura de carpetas
+- [x] Crear proyecto VSC
+- [x] Configurar PostgreSQL
+- [x] Crear repositorio GitHub
+- [x] Crear estructura de carpetas
 
 ## Etapa 3 - paginas principales
-- [ ] Crear navbar y footer
-- [ ] Crear pagina de inicio
-- [ ] Crear detalle de producto
-- [ ] Crear secciones de catalogo y Consultas Nosotros
-- [ ] Crear pagina de contacto
+- [x] Crear navbar y footer
+- [x] Crear pagina de inicio
+- [x] Crear detalle de producto
+- [x] Crear secciones de catalogo y Consultas Nosotros
+- [x] Crear pagina de contacto
 
 ## Etapa 4 - Catalogo
 - [ ] Definir los productos
@@ -30,10 +30,10 @@
 - [ ] Revisar que los enlaces funcionen correctamente
 
 ## Etapa 6 - Base de datos (Supabase)
-- [ ] Crear el proyecto en Supabase
-- [ ] Crear las tablas categorias y productos
-- [ ] Cargar los datos del catálogo
-- [ ] Activar permisos de solo lectura (RLS)
+- [x] Crear el proyecto en Supabase
+- [x] Crear las tablas categorias y productos
+- [x] Cargar los datos del catálogo
+- [x] Activar permisos de solo lectura (RLS)
 
 
 ## Etapa 7 - Pruebas

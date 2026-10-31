@@ -6,6 +6,7 @@ Proteger el sitio, los datos del catálogo en Supabase y las claves del proyecto
 ## Supabase
 - La clave pública (`anon`) puede usarse en el navegador; la seguridad depende de RLS.
 - Activar RLS en `categorias` y `productos` con permiso solo de lectura para el público.
+- El bucket `productos` es público para ver imágenes; el público no puede subirlas, cambiarlas ni borrarlas.
 - La clave `service_role` nunca va en el código, en el navegador ni en GitHub.
 
 ## Validación

@@ -44,3 +44,9 @@ insert into productos (nombre, descripcion, imagen_url, categoria_id) values
   "categoria_id": 1
 }
 ```
+
+### Imágenes
+Se guardan en el bucket público `productos` de Supabase Storage. 
+
+
+```

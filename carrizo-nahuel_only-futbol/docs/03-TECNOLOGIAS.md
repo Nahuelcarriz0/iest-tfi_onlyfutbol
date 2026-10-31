@@ -7,7 +7,8 @@
 | Diseño responsive | Bootstrap | Facilita interfaces adaptables |
 | Programacion | JavaScript | Se utilizará para implementar funciones como el carrito, los filtros y las interacciones de la página. |
 | Editor de Codigo | Visual Studio Code |  utilizarlo para editar los archivos y revisar el código|
-| Base de datos | Supabase(usada en un futuro) | Almacena informacion relacional |
+| Base de datos | Supabase (PostgreSQL) | Guarda las categorías y los productos del catálogo |
+| Imágenes | Supabase Storage | Guarda las imágenes de los productos |
 | Tipografías | Google Fonts | Carga Montserrat y Roboto, las tipografías de la marca |
 | Consultas | WhatsApp | Permite consultar por cada producto del catálogo |
 | Repositorio | GitHub | Guarda el codigo y su historial |

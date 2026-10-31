@@ -13,7 +13,9 @@ only-futbol/
 ├── script/
 │   ├── navegacion.js
 │   ├── pie-pagina.js
-│   └── catalogo-animacion.js
+│   ├── productos.js
+│   ├── catalogo-animacion.js
+│   └── catalogo-talles.js
 ├── assets/
 │   └── img/
 ├── docs/
