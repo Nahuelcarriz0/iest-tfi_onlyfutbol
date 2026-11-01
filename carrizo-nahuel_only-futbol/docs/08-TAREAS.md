@@ -19,10 +19,10 @@
 - [x] Crear pagina de contacto
 
 ## Etapa 4 - Catalogo
-- [ ] Definir los productos
-- [ ] Mostrar nombre, descripción, imagen y precio
-- [ ] Organizar los productos por categorías
-- [ ] Implementar el filtrado básico por categoría
+- [x] Definir los productos
+- [x] Mostrar nombre, descripción, imagen
+- [x] Organizar los productos por categorías
+- [x] Implementar el filtrado básico por categoría
 
 ## Etapa 5 - Formulario
 - [ ] Agregar un acceso de contacto por WhatsApp

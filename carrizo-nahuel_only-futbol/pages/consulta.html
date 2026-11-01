@@ -35,6 +35,22 @@
   <main>
     <section class="seccion">
       <h1 class="seccion-titulo">Consulta</h1>
+
+      <form class="formulario-consulta" id="formulario-consulta" novalidate>
+        <div class="catalogo-campo">
+          <label class="catalogo-etiqueta" for="consulta-nombre">Nombre</label>
+          <input class="catalogo-control" id="consulta-nombre" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="catalogo-campo">
+          <label class="catalogo-etiqueta" for="consulta-mensaje">Mensaje</label>
+          <textarea class="catalogo-control" id="consulta-mensaje" rows="5" required></textarea>
+        </div>
+
+        <p class="formulario-consulta-aviso" id="consulta-aviso" role="alert" hidden>Completá tu nombre y tu mensaje.</p>
+
+        <button class="tarjeta-producto-boton" type="submit">Enviar por WhatsApp</button>
+      </form>
     </section>
   </main>
 
@@ -45,5 +61,6 @@
 
   <script src="../script/navegacion.js" defer></script>
   <script src="../script/pie-pagina.js" defer></script>
+  <script src="../script/consulta.js" defer></script>
 </body>
 </html>

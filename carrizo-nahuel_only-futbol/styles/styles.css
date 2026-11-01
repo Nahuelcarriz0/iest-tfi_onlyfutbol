@@ -767,6 +767,26 @@ body:has(.vista-producto[open]) {
 }
 
 /* ==========================================================
+   Formulario de consulta
+   ========================================================== */
+.formulario-consulta {
+  display: grid;
+  gap: 1rem;
+  max-width: 36rem;
+  margin-top: 1.5rem;
+}
+
+.formulario-consulta textarea {
+  resize: vertical;
+}
+
+.formulario-consulta-aviso {
+  margin: 0;
+  font-weight: 700;
+  color: var(--color-azul);
+}
+
+/* ==========================================================
    Pie de página
    ========================================================== */
 .pie-pagina {
