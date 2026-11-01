@@ -1,6 +1,6 @@
-# CLAUDE.md — Only Fútbol
+# CLAUDE.md — Only Futbol
 
-Tienda online de camisetas y productos de fútbol. Trabajo Final Integrador de Inteligencia Artificial. Sitio web estático con HTML5, CSS3 y JavaScript (Bootstrap opcional). Backend y base de datos quedan para una etapa futura.
+Tienda online de camisetas y productos de futbol. Trabajo Final Integrador de Inteligencia Artificial. Sitio web estático con HTML5, CSS3 y JavaScript (Bootstrap opcional). Backend y base de datos quedan para una etapa futura.
 
 ## Instrucciones del proyecto
 @docs/CONSTITUCION.md

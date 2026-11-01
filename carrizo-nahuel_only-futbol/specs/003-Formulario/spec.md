@@ -4,7 +4,7 @@
 
 ## 1. Contexto
 
-La página de consulta de Only Fútbol tiene un formulario para que un visitante escriba su consulta y la envíe por WhatsApp, el medio de contacto definido para el emprendimiento. Como el sitio no tiene backend, el formulario deja el mensaje listo en WhatsApp y el visitante termina de enviarlo desde ahí.
+La página de consulta de Only Futbol tiene un formulario para que un visitante escriba su consulta y la envíe por WhatsApp, el medio de contacto definido para el emprendimiento. Como el sitio no tiene backend, el formulario deja el mensaje listo en WhatsApp y el visitante termina de enviarlo desde ahí.
 
 ## 2. Historias de usuario
 

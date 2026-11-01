@@ -4,7 +4,7 @@
 
 ## 1. Contexto
 
-Only Fútbol guarda las categorías y los productos del catálogo en una base de datos de Supabase, y sus imágenes en Supabase Storage. El público solo puede verlos, para que nadie pueda modificarlos desde el sitio.
+Only Futbol guarda las categorías y los productos del catálogo en una base de datos de Supabase, y sus imágenes en Supabase Storage. El público solo puede verlos, para que nadie pueda modificarlos desde el sitio.
 
 ## 2. Historias de usuario
 

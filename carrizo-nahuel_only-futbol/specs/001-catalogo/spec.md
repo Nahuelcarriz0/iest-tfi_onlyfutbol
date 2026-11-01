@@ -4,11 +4,11 @@
 
 ## 1. Contexto
 
-Only Fútbol reúne en una tienda online sus camisetas y productos de fútbol. El catálogo los muestra en tarjetas y permite buscarlos y filtrarlos.
+Only Futbol reúne en una tienda online sus camisetas y productos de futbol. El catálogo los muestra en tarjetas y permite buscarlos y filtrarlos.
 
 ## 2. Historias de usuario
 
-- **HU-01:** Como fanático del fútbol, quiero ver los productos y consultar por ellos, para conocer lo que ofrece la tienda.
+- **HU-01:** Como fanático del futbol, quiero ver los productos y consultar por ellos, para conocer lo que ofrece la tienda.
 - **HU-02:** Como persona que busca una camiseta, quiero buscarla por nombre, para encontrarla rápido.
 - **HU-03:** Como persona interesada en un tipo de producto, quiero filtrar por categoría, para ver solo lo que me interesa.
 - **HU-04:** Como usuario de celular, quiero que el catálogo se vea bien en mi pantalla.

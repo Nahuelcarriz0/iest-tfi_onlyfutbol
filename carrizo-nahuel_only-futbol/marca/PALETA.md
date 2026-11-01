@@ -1,14 +1,11 @@
-# Paleta de colores — Only Fútbol
-
-> Completar los valores definitivos de la identidad visual.
+# Paleta de colores — Only Futbol
 
 | Uso | Nombre | HEX |
 |---|---|---|
-| Principal | [Color principal] | `#______` |
-| Secundario | [Color secundario] | `#______` |
-| Acento | [Color de acento] | `#______` |
-| Fondo | [Color de fondo] | `#______` |
-| Texto | [Color de texto] | `#______` |
+| Principal | Azul oscuro | `#0c1b54` |
+| Secundario y acento | Amarillo mostaza | `#fbc51d` |
+| Fondo | Blanco | `#ffffff` |
+| Texto | Negro | `#000000` |
 
 ## Accesibilidad
 Verificar que el contraste entre texto y fondo sea suficiente, especialmente en botones y enlaces.

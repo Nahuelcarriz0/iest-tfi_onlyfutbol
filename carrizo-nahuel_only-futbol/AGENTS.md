@@ -1,9 +1,9 @@
-# AGENTS.md — Only Fútbol
+# AGENTS.md — Only Futbol
 
 Instrucciones para cualquier asistente de IA que trabaje en este proyecto.
 
 ## 1. Proyecto
-Only Fútbol es una tienda online de camisetas y productos de fútbol. Es el Trabajo Final Integrador de Inteligencia Artificial. La versión actual es un sitio web estático: no hay backend ni base de datos todavía.
+Only Futbol es una tienda online de camisetas y productos de futbol. Es el Trabajo Final Integrador de Inteligencia Artificial. La versión actual es un sitio web estático: no hay backend ni base de datos todavía.
 
 ## 2. Qué leer antes de programar
 Leer siempre, en este orden:

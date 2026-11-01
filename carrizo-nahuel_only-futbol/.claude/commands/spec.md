@@ -1,5 +1,5 @@
 ---
-description: Crea o actualiza el spec.md de una funcionalidad de Only Fútbol a partir de la documentación del proyecto.
+description: Crea o actualiza el spec.md de una funcionalidad de Only Futbol a partir de la documentación del proyecto.
 argument-hint: <nombre de la funcionalidad>
 ---
 # /spec — Especificar una funcionalidad

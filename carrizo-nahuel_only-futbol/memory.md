@@ -1,10 +1,10 @@
-# Memory — Only Fútbol
+# Memory — Only Futbol
 
 Última actualización: 31/10/2026.
 
 ## Información del proyecto
-- Nombre: Only Fútbol.
-- Tipo: Tienda online de productos de fútbol.
+- Nombre: Only Futbol.
+- Tipo: Tienda online de productos de futbol.
 - Contexto: Trabajo Final Integrador de Inteligencia Artificial.
 
 ## Hechos comprobados

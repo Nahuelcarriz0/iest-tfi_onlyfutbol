@@ -25,9 +25,9 @@
 - [x] Implementar el filtrado básico por categoría
 
 ## Etapa 5 - Formulario
-- [ ] Agregar un acceso de contacto por WhatsApp
-- [ ] Incorporar los medios de contacto definidos para el emprendimiento
-- [ ] Revisar que los enlaces funcionen correctamente
+- [x] Agregar un acceso de contacto por WhatsApp
+- [x] Incorporar los medios de contacto definidos para el emprendimiento
+- [x] Revisar que los enlaces funcionen correctamente
 
 ## Etapa 6 - Base de datos (Supabase)
 - [x] Crear el proyecto en Supabase

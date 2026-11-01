@@ -1,6 +1,6 @@
 ---
 name: revisar-accesibilidad
-description: Revisa la accesibilidad y el diseño responsive de las páginas HTML y CSS de Only Fútbol según la constitución. Usar al revisar o verificar páginas, formularios, imágenes, colores o navegación.
+description: Revisa la accesibilidad y el diseño responsive de las páginas HTML y CSS de Only Futbol según la constitución. Usar al revisar o verificar páginas, formularios, imágenes, colores o navegación.
 ---
 # Revisar accesibilidad
 

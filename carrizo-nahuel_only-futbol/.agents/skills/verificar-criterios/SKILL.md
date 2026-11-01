@@ -1,6 +1,6 @@
 ---
 name: verificar-criterios
-description: Comprueba los criterios de aceptación de una funcionalidad de Only Fútbol y exige evidencia para cada uno. Usar al verificar una funcionalidad, antes de marcar tareas como terminadas o cuando se pregunte si un requisito se cumple.
+description: Comprueba los criterios de aceptación de una funcionalidad de Only Futbol y exige evidencia para cada uno. Usar al verificar una funcionalidad, antes de marcar tareas como terminadas o cuando se pregunte si un requisito se cumple.
 ---
 # Verificar criterios de aceptación
 

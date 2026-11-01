@@ -1,6 +1,6 @@
-# Constitución — Only Fútbol
+# Constitución — Only Futbol
 
-Principios que guían el desarrollo de Only Fútbol. Toda funcionalidad, cambio o revisión debe cumplirlos. Si un principio cambia, se actualiza este documento antes que el código.
+Principios que guían el desarrollo de Only Futbol. Toda funcionalidad, cambio o revisión debe cumplirlos. Si un principio cambia, se actualiza este documento antes que el código.
 
 ## 1. Tecnología sencilla y documentada
 La versión actual se desarrolla con HTML5, CSS3 y JavaScript, con control de versiones en Git y GitHub. Bootstrap es opcional y solo puede usarse para el diseño responsive, según `docs/03-TECNOLOGIAS.md`. El catálogo lee sus datos de Supabase (PostgreSQL) y sus imágenes se guardan en Supabase Storage. Los servicios externos en uso son Google Fonts, para las tipografías, y WhatsApp, para las consultas.
@@ -8,7 +8,7 @@ La versión actual se desarrolla con HTML5, CSS3 y JavaScript, con control de ve
 **Se comprueba:** el proyecto no incluye frameworks, dependencias ni servicios que no estén documentados y justificados en `docs/03-TECNOLOGIAS.md`.
 
 ## 2. Identidad visual consistente
-La interfaz respeta la identidad de Only Fútbol: azul oscuro `#0c1b54`, amarillo mostaza `#fbc51d`, blanco `#FFFFFF` y negro `#000000` para textos. Se usa Montserrat para títulos y elementos destacados, y Roboto para los textos generales. El estilo es deportivo, ordenado y fácil de usar.
+La interfaz respeta la identidad de Only Futbol: azul oscuro `#0c1b54`, amarillo mostaza `#fbc51d`, blanco `#FFFFFF` y negro `#000000` para textos. Se usa Montserrat para títulos y elementos destacados, y Roboto para los textos generales. El estilo es deportivo, ordenado y fácil de usar.
 
 **Se comprueba:** los colores y las tipografías están definidos una sola vez en `styles/styles.css` (por ejemplo, como variables CSS) y no se usan colores de marca fuera de esa paleta.
 

@@ -1,4 +1,4 @@
-# Seguridad - Only Fútbol
+# Seguridad - Only Futbol
 
 ## Objetivo
 Proteger el sitio, los datos del catálogo en Supabase y las claves del proyecto.

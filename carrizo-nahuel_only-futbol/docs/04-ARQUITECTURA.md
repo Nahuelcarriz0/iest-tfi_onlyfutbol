@@ -1,4 +1,4 @@
-# Arquitectura - Only Fútbol
+# Arquitectura - Only Futbol
 
 ## Estructura
 

@@ -1,5 +1,5 @@
 ---
-description: Verifica una funcionalidad de Only Fútbol contra sus criterios de aceptación y prepara verificacion.md con evidencia real.
+description: Verifica una funcionalidad de Only Futbol contra sus criterios de aceptación y prepara verificacion.md con evidencia real.
 argument-hint: <nombre de la funcionalidad>
 ---
 # /verificar — Verificar una funcionalidad

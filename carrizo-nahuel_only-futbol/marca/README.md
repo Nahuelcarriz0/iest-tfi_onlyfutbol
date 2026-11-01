@@ -1,6 +1,6 @@
-# Marca — Only Fútbol
+# Marca — Only Futbol
 
-Esta carpeta reúne la documentación de identidad visual de Only Fútbol.
+Esta carpeta reúne la documentación de identidad visual de Only Futbol.
 
 - [`PALETA.md`](PALETA.md): colores de marca y usos previstos.
 - Agregar aquí logotipos, variantes, tipografías y reglas de uso cuando estén definidos.

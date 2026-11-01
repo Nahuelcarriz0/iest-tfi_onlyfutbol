@@ -12,4 +12,4 @@ Hallazgos de la IA revisando la spec como QA y decisión del estudiante sobre ca
 | C-06 | La spec no dice qué pasa con los campos después de enviar. | Dejarlos escritos, por si el visitante vuelve y quiere corregir algo. |
 | C-07 | RF-02 no contempla que el navegador bloquee la pestaña de WhatsApp. | No agregar un aviso, porque la pestaña se abre al tocar el botón y los navegadores suelen permitirlo. |
 | C-08 | La Etapa 5 pide "los medios de contacto definidos", pero la spec no dice cuáles son. | Solo WhatsApp. |
-| C-09 | La spec no tiene criterios de finalización, y sin ellos no está claro cuándo termina la funcionalidad. | Agregar un criterio: el enlace de WhatsApp abre el chat con el número de la tienda y el mensaje escrito. |
+| C-09 | La spec no tiene criterios de finalización, y sin ellos no está claro cuándo termina la funcionalidad. | ya agrege un criterio y es el enlace de WhatsApp abre el chat con el número de la tienda y el mensaje escrito. |

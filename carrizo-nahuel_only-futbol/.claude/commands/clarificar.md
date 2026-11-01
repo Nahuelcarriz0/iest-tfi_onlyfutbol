@@ -1,5 +1,5 @@
 ---
-description: Detecta dudas y contradicciones en la especificación de una funcionalidad de Only Fútbol y registra las respuestas en clarificacion.md.
+description: Detecta dudas y contradicciones en la especificación de una funcionalidad de Only Futbol y registra las respuestas en clarificacion.md.
 argument-hint: <nombre de la funcionalidad>
 ---
 # /clarificar — Aclarar una especificación
