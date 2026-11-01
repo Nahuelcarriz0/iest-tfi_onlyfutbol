@@ -16,8 +16,6 @@ only-futbol/
 │   ├── productos.js
 │   ├── catalogo-animacion.js
 │   └── catalogo-talles.js
-├── assets/
-│   └── img/
 ├── docs/
 ├── specs/
 └── marca/

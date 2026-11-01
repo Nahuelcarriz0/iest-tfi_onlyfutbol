@@ -4,7 +4,6 @@
 const URL_SUPABASE = "https://pyaeswztbsqlvcvprtxa.supabase.co";
 const CLAVE_PUBLICA_SUPABASE = "sb_publishable_5Has8xMUUBFRoqkAzl-8Mg_Gla6HsZZ";
 const URL_IMAGENES = URL_SUPABASE + "/storage/v1/object/public/productos/";
-const RUTA_IMAGENES_LOCALES = "assets/img/";
 const NUMERO_WHATSAPP = "543837510380";
 
 const catalogoLista = document.querySelector(".catalogo-lista");
@@ -54,17 +53,13 @@ function descartarProductosIncorrectos(productos, categorias) {
   });
 }
 
-// Solo se aceptan imágenes del proyecto o del bucket "productos" de Supabase.
+// Solo se aceptan imágenes del bucket "productos" de Supabase.
 function obtenerRutaImagen(imagenUrl) {
   if (typeof imagenUrl !== "string" || imagenUrl.includes("..")) {
     return null;
   }
 
-  if (imagenUrl.startsWith(URL_IMAGENES)) {
-    return imagenUrl;
-  }
-
-  return imagenUrl.startsWith(RUTA_IMAGENES_LOCALES) ? "../" + imagenUrl : null;
+  return imagenUrl.startsWith(URL_IMAGENES) ? imagenUrl : null;
 }
 
 function crearRecuadroSinImagen(nombre) {

@@ -28,8 +28,8 @@ Mejorar la posibilidad de que las paginas publicas de Only Futbol sean encontrad
 ## Imagenes
 Utilizar textos alternativos descriptivos:
 ```html
-<img src="/assets/img/river.jpg" alt="Camiseta de River Plate">
-<img src="/assets/img/argentina.jpg" alt="Camiseta de la Seleccion Argentina">
+<img src="https://pyaeswztbsqlvcvprtxa.supabase.co/storage/v1/object/public/productos/CLUBARG-RIVER.webp" alt="Camiseta de River Plate">
+<img src="https://pyaeswztbsqlvcvprtxa.supabase.co/storage/v1/object/public/productos/SELECCION-ARGENTINA.webp" alt="Camiseta de la Seleccion Argentina">
 ```
 
 ## Recomendaciones

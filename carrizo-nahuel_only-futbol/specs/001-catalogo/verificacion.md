@@ -1,10 +1,5 @@
 # Verificación — Catálogo de productos
 
-## Estado de cada requisito
-
-Estados: **Cumple**, **No cumple** o **Prueba manual pendiente**
-
-
 | Requisito | Qué pide | Estado |
 |---|---|---|
 | RF-01 | Una tarjeta por producto válido, con sus datos y "Ver más" | Cumple |
