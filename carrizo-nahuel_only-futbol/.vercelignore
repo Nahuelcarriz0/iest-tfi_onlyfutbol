@@ -1,0 +1,10 @@
+# Documentación del proyecto: queda en GitHub, no se publica en el sitio.
+/.agents
+/.claude
+/docs
+/specs
+/AGENTS.md
+/CLAUDE.md
+/memory.md
+/marca/PALETA.md
+/marca/README.md
