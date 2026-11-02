@@ -4,8 +4,6 @@ argument-hint: <nombre de la funcionalidad>
 ---
 # /verificar — Verificar una funcionalidad
 
-Funcionalidad: $ARGUMENTS
-
 ## 1. Leer
 - `spec.md`, `clarificacion.md` y `tasks.md` de la funcionalidad, en la ubicación definida en `AGENTS.md` (sección 3). Si no existe `spec.md`, indicarlo y detenerse.
 - Los archivos HTML, CSS y JavaScript de la funcionalidad.

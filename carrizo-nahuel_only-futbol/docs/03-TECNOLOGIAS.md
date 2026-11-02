@@ -10,7 +10,7 @@
 | Base de datos | Supabase (PostgreSQL) | Guarda las categorías y los productos del catálogo |
 | Imágenes | Supabase Storage | Guarda las imágenes de los productos |
 | Tipografías | Google Fonts | Carga Montserrat y Roboto, las tipografías de la marca |
-| Consultas | WhatsApp | Permite consultar por cada producto del catálogo |
+| Consultas | WhatsApp | Permite consultar por cada producto del catálogo y desde el formulario de consulta |
 | Repositorio | GitHub | Guarda el codigo y su historial |
 | Publicacion | Netlify u otro servicio equivalente | Permite publicar frontend y backend |
 | IA | ChatGPT - Cloude | Apoya consultas, ideas y revision del codigo |

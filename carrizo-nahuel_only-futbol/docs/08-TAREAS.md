@@ -37,14 +37,14 @@
 
 
 ## Etapa 7 - Pruebas
-- [ ] Revisar navegacion y botones
-- [ ] Revisar formularios
-- [ ] Revisar catalogo y stock
-- [ ] Revisar diseño responsive
-- [ ] Corregir errores
+- [x] Revisar navegacion y botones
+- [x] Revisar formularios
+- [x] Revisar catalogo y stock
+- [x] Revisar diseño responsive
+- [x] Corregir errores
 
 ## Etapa 8 - Publicacion
-- [ ] Preparar version final
-- [ ] Subir codigo a GitHub
-- [ ] Configurar variables en el servicio de publicacion
-- [ ] Verificar HTTPS y funcionamiento final
+- [x] Preparar version final
+- [x] Subir codigo a GitHub
+- [x] Configurar variables en el servicio de publicacion
+- [x] Verificar HTTPS y funcionamiento final

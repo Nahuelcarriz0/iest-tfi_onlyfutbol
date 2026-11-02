@@ -15,7 +15,10 @@ only-futbol/
 │   ├── pie-pagina.js
 │   ├── productos.js
 │   ├── catalogo-animacion.js
-│   └── catalogo-talles.js
+│   ├── catalogo-talles.js
+│   └── consulta.js
+├── assets/
+│   └── img/
 ├── docs/
 ├── specs/
 └── marca/

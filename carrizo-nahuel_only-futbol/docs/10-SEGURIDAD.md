@@ -12,7 +12,7 @@ Proteger el sitio, los datos del catálogo en Supabase y las claves del proyecto
 ## Validación
 - El buscador del catálogo acepta hasta 50 caracteres.
 - Lo que escribe el usuario y los datos de los productos se muestran siempre como texto, nunca como código.
-- Cuando la página de consulta tenga formulario, rechazar los datos inválidos con un mensaje claro.
+- El formulario de consulta rechaza el nombre o el mensaje vacíos, o con solo espacios, con un mensaje claro.
 
 ## Enlaces externos
 - Los botones "Consultar" abren WhatsApp en otra pestaña con `rel="noopener noreferrer"`.
