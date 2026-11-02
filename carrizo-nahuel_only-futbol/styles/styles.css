@@ -87,17 +87,15 @@ body {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
-  font-family: var(--fuente-titulos);
-  font-size: 1.375rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  color: var(--color-blanco);
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
-.encabezado-marca-destacada {
-  color: var(--color-amarillo);
+/* El logo tiene fondo transparente y partes azules: el fondo blanco evita que se pierdan sobre el encabezado. */
+.encabezado-logo {
+  display: block;
+  width: auto;
+  height: 4rem;
+  background-color: var(--color-blanco);
+  border-radius: 6px;
 }
 
 .encabezado-marca:focus-visible,
@@ -257,6 +255,38 @@ main {
   color: var(--color-azul);
   text-transform: uppercase;
   border-bottom: 4px solid var(--color-amarillo);
+}
+
+/* ==========================================================
+   Página de inicio
+   ========================================================== */
+.inicio-enlace {
+  display: block;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+}
+
+.inicio-enlace:focus-visible {
+  outline: 3px solid var(--color-azul);
+  outline-offset: 3px;
+}
+
+.inicio-imagen {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ==========================================================
+   Página de nosotros
+   ========================================================== */
+/* Banner de lado a lado: se recorta arriba y abajo, sin cortar el texto de la imagen. */
+.nosotros-banner {
+  display: block;
+  width: 100%;
+  height: clamp(180px, 30vw, 360px);
+  object-fit: cover;
 }
 
 /* ==========================================================
@@ -769,11 +799,24 @@ body:has(.vista-producto[open]) {
 /* ==========================================================
    Formulario de consulta
    ========================================================== */
+.consulta-fondo {
+  background: url("../assets/img/consulta.jpg") center / cover no-repeat;
+}
+
+/* La imagen de fondo es oscura: el título va en blanco para que se lea. */
+.consulta-fondo .seccion-titulo {
+  color: var(--color-blanco);
+}
+
 .formulario-consulta {
   display: grid;
   gap: 1rem;
   max-width: 36rem;
   margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: var(--color-blanco);
+  border: 3px solid var(--color-amarillo);
+  border-radius: 8px;
 }
 
 .formulario-consulta textarea {
