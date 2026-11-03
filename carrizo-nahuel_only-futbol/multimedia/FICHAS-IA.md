@@ -1,7 +1,9 @@
 # Fichas de piezas generadas con IA — Only Futbol
 
-# FICHA 1 PORTADA
-NOMBRE: PIEZA 1 ANUNCION DE LA PAGINA
+ANEXO II
+
+# FIGURA 1
+NOMBRE: FIGURA 1 
 
 -TIPO IMAGEN
 
@@ -21,8 +23,8 @@ Uso comercial: Sí, permite utilizar los contenidos generados para publicidad, e
 
 leyenda de transparencia: tiene debajo de la imagen gerando con ia
 
-# FICHA 2 IMAGEN DE MUESTRA PARA CATALOGO
-NOMBRE: PIEZA 2 
+# FIGURA 2 
+NOMBRE: FIGURA 2 
 
 -TIPO IMAGEN
 
@@ -43,8 +45,8 @@ Uso comercial: Sí, permite utilizar el contenido generado en proyectos, publici
 
 leyenda de transparencia: tiene debajo de la imagen gerando con ia
 
-# FICHA 3 IMAGEN DE MUESTRA PARA CATALOGO
-NOMBRE: PIEZA 3 
+# FIGURA 3 
+NOMBRE: FIGURA 3 
 
 -TIPO IMAGEN
 
@@ -57,7 +59,7 @@ NOMBRE: PIEZA 3
 
 -Edicion humana: ninguna
 
-Uso en el proyecto: Aparece en la pagina principal
+Uso en el proyecto: Aparece en la seccion de consultas
 
 Licencia : Condiciones de uso Se deben respetar las políticas de OpenAI, los derechos de autor y la privacidad. El usuario es responsable de verificar el contenido generado
 
@@ -65,8 +67,8 @@ Uso comercial: Sí, permite utilizar los contenidos generados para publicidad, e
 
 leyenda de transparencia: tiene debajo de la imagen gerando con ia
 
-# FICHA 4 IMAGEN DE MUESTRA PARA CATALOGO
-NOMBRE: PIEZA 4 
+# FIGURA 4
+NOMBRE: FIGURA 4
 
 -TIPO IMAGEN
 
@@ -87,8 +89,8 @@ Uso comercial: Sí, permite utilizar el contenido generado en proyectos, publici
 leyenda de transparencia: tiene debajo de la imagen gerando con ia
 
 
-# FICHA 5 IMAGEN DE MUESTRA PARA CATALOGO
-NOMBRE: PIEZA 5
+# FIGURA 5 
+NOMBRE: FIGURA 5 
 
 -TIPO IMAGEN
 
@@ -108,20 +110,63 @@ Uso comercial: Sí, permite utilizar el contenido generado en proyectos, publici
 
 leyenda de transparencia: tiene debajo de la imagen gerando con ia
 
-# FICHA 6 IMAGEN DE MUESTRA PARA CATALOGO
-NOMBRE: PIEZA 6
+# FIGURA 6 
+NOMBRE: FIGURA 6
 
 -TIPO IMAGEN
 
 -HERRAMIENTA Y MODELO: GEMINI - FECHA DE USO 01/11/26
 
--Prompt: Generame imagen fotorealista de una persona agregando a su coleccion remeras su nueva compra"
+-Prompt: Generame imagen fotorealista de una persona agregando a su coleccion remeras su nueva compra
 
 -Iteraciones: 1 se borro la camiseta de atras
 
 -Edicion humana: ninguna
 
-Uso en el proyecto: Aparece en la en la seccion nosotros
+Uso en el proyecto: No aparece en el proyecto
+
+Licencia : Condiciones de uso Se deben respetar las políticas de Google, los derechos de autor y la privacidad. El usuario es responsable de revisar y verificar el contenido generado
+
+Uso comercial: Sí, permite utilizar el contenido generado en proyectos, publicidad y emprendimientos, respetando sus términos y condiciones. Google no reclama la propiedad del contenido generado
+
+leyenda de transparencia: tiene debajo de la imagen gerando con ia
+
+
+# FIGURA 7 
+NOMBRE: FIGURA 7 
+
+-TIPO IMAGEN
+
+-HERRAMIENTA Y MODELO: GEMINI - FECHA DE USO 01/11/26
+
+-Prompt: Generame imagen fotorealista de una persona feliz que le llego su camiseta a su casa 
+
+-Iteraciones: 0
+
+-Edicion humana: ninguna
+
+Uso en el proyecto: no aparece en el sitio
+
+Licencia : Condiciones de uso Se deben respetar las políticas de Google, los derechos de autor y la privacidad. El usuario es responsable de revisar y verificar el contenido generado
+
+Uso comercial: Sí, permite utilizar el contenido generado en proyectos, publicidad y emprendimientos, respetando sus términos y condiciones. Google no reclama la propiedad del contenido generado
+
+leyenda de transparencia: tiene debajo de la imagen gerando con ia
+
+# FIGURA 8
+NOMBRE: FIGURA 8
+
+-TIPO IMAGEN
+
+-HERRAMIENTA Y MODELO: GEMINI - FECHA DE USO 01/11/26
+
+-Prompt: Generame imagen fotorealista de una persona que agregando a su coleccion remeras su nueva compra probando el producto
+
+-Iteraciones: 0
+
+-Edicion humana: ninguna
+
+Uso en el proyecto: no aparece en el sitio
 
 Licencia : Condiciones de uso Se deben respetar las políticas de Google, los derechos de autor y la privacidad. El usuario es responsable de revisar y verificar el contenido generado
 
