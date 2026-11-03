@@ -21,5 +21,7 @@ only-futbol/
 │   └── img/
 ├── docs/
 ├── specs/
-└── marca/
+├── marca/
+└── multimedia/
+    └── FICHAS-IA.md
 ```

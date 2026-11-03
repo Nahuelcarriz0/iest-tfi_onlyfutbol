@@ -278,6 +278,25 @@ main {
   border-radius: 8px;
 }
 
+/* Leyenda de transparencia para las imágenes hechas con IA. */
+.leyenda-ia {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--color-negro) 70%, transparent);
+}
+
+.leyenda-ia-banner {
+  max-width: var(--ancho-maximo);
+  margin: 0.35rem auto 0;
+  padding: 0 1rem;
+}
+
+/* Sobre el fondo oscuro de Consulta, la leyenda va en blanco. */
+.leyenda-ia-fondo {
+  margin-top: 1rem;
+  color: var(--color-blanco);
+}
+
 /* ==========================================================
    Página de nosotros
    ========================================================== */
