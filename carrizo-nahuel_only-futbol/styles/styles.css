@@ -278,6 +278,11 @@ main {
   border-radius: 8px;
 }
 
+/* Enlace al video de promoción, al final de Inicio. */
+.tarjeta-producto-boton.inicio-promocion {
+  margin-top: 1.5rem;
+}
+
 /* Leyenda de transparencia para las imágenes hechas con IA. */
 .leyenda-ia {
   margin: 0.35rem 0 0;
