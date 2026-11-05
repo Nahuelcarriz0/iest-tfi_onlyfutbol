@@ -13,6 +13,7 @@
 | Consultas | WhatsApp | Permite consultar por cada producto del catálogo y desde el formulario de consulta |
 | Repositorio | GitHub | Guarda el codigo y su historial |
 | Publicacion | Vercel | Publica el sitio estático desde GitHub |
+| Video | YouTube | Muestra el video de promoción dentro de la página de inicio |
 | IA | ChatGPT - Cloude | Apoya consultas, ideas y revision del codigo |
 
 

@@ -278,28 +278,29 @@ main {
   border-radius: 8px;
 }
 
-/* Enlace al video de promoción, al final de Inicio. */
-.tarjeta-producto-boton.inicio-promocion {
-  margin-top: 1.5rem;
+/* Video de promoción de YouTube, al final de Inicio. */
+.inicio-video-titulo {
+  margin: 2rem 0 1rem;
+  font-family: var(--fuente-titulos);
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--color-azul);
+  text-transform: uppercase;
 }
 
-/* Leyenda de transparencia para las imágenes hechas con IA. */
-.leyenda-ia {
-  margin: 0.35rem 0 0;
-  font-size: 0.8rem;
-  color: color-mix(in srgb, var(--color-negro) 70%, transparent);
+.inicio-video {
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+  overflow: hidden;
+  border: 3px solid var(--color-amarillo);
+  border-radius: 8px;
 }
 
-.leyenda-ia-banner {
-  max-width: var(--ancho-maximo);
-  margin: 0.35rem auto 0;
-  padding: 0 1rem;
-}
-
-/* Sobre el fondo oscuro de Consulta, la leyenda va en blanco. */
-.leyenda-ia-fondo {
-  margin-top: 1rem;
-  color: var(--color-blanco);
+.inicio-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* ==========================================================
@@ -857,6 +858,7 @@ body:has(.vista-producto[open]) {
    Pie de página
    ========================================================== */
 .pie-pagina {
+  position: relative;
   padding: 2.5rem 1rem 1.5rem;
   color: var(--color-blanco);
   text-align: center;
@@ -882,4 +884,34 @@ body:has(.vista-producto[open]) {
   padding-top: 1rem;
   font-size: 0.875rem;
   border-top: 1px solid var(--color-amarillo);
+}
+
+.pie-pagina-contacto {
+  margin: 0.5rem 0 0;
+  font-size: 0.875rem;
+}
+
+.pie-pagina-enlace {
+  color: var(--color-amarillo);
+}
+
+.pie-pagina-enlace:focus-visible {
+  outline: 3px solid var(--color-amarillo);
+  outline-offset: 2px;
+}
+
+/* Aviso de transparencia: debajo de todo en celulares y en la esquina en pantallas grandes. */
+.pie-pagina-ia {
+  margin: 1rem 0 0;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .pie-pagina-ia {
+    position: absolute;
+    right: 1rem;
+    bottom: 0.75rem;
+    margin: 0;
+  }
 }
